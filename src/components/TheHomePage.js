@@ -7,7 +7,7 @@ import {
   AiOutlineClose,
 } from "react-icons/ai";
 import { useState } from "react";
-import IPD from "./IPD";
+// import IPD from "./IPD"; this line is commented via website
 import Test from "./Test";
 
 const TheHomePage = () => {
