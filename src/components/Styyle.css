@@ -1,0 +1,7 @@
+.ipdbody{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: grid;
+    grid-template-columns: (100px, 1fr);
+    grid-gap: 20px;
+}
