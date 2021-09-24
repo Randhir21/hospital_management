@@ -7,6 +7,8 @@ import {
   AiOutlineClose,
 } from "react-icons/ai";
 import { useState } from "react";
+import IPD from "./IPD";
+import Test from "./Test";
 
 const TheHomePage = () => {
   const [sideBarStatus, setSideBarStatus] = useState(false);
@@ -40,7 +42,9 @@ const TheHomePage = () => {
             <AiOutlineUser className="icons" />
           </ActionMenu>
         </NavBar>
-        <MainContent>This is Main Content</MainContent>
+        <MainContent>
+          <Test/>
+        </MainContent>
       </RightContent>
     </HomePage>
   );
@@ -116,5 +120,4 @@ const ActionMenu = styled.div``;
 const MainContent = styled.div`
   background-color: #f2f2f2;
   height: calc(100vh - 50px);
-  padding: 16px;
 `;
