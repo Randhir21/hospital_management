@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { Route, Switch } from 'react-router';
-import OPD from "./OPD"
-import IPD from "./IPD"
-import Dashboard from "./Dashboard"
-import Receipt from "./Receipt"
-import MIS from "./MIS"
-import IPDBilling from "./IPDBilling"
+import { Route, Switch } from "react-router";
+import OPD from "./OPD";
+import IPD from "./IPD";
+import Dashboard from "./Dashboard";
+import Receipt from "./Receipt";
+import MIS from "./MIS";
+import IPDBilling from "./IPDBilling";
 
 import { Link, NavLink } from "react-router-dom";
 import {
@@ -30,13 +30,24 @@ const TheHomePage = () => {
         <Logo>
           <img src="/images/logo.jpg" alt="" />
         </Logo>
-        <Link to="/"><p>OPD</p></Link>
-        <Link to="/ipd"><p>IPD</p></Link>
-        <Link to="/dashboard"><p>Dashboard</p></Link>
-        <Link to="/ipdbilling"><p>IPD Billing</p></Link>
-        <Link to="/receipt"><p>Receipt</p></Link>
-        <Link to="/mis"><p>MIS</p></Link>
-        
+        <Link to="/">
+          <p>OPD</p>
+        </Link>
+        <Link to="/ipd">
+          <p>IPD</p>
+        </Link>
+        <Link to="/dashboard">
+          <p>Dashboard</p>
+        </Link>
+        <Link to="/ipdbilling">
+          <p>IPD Billing</p>
+        </Link>
+        <Link to="/receipt">
+          <p>Receipt</p>
+        </Link>
+        <Link to="/mis">
+          <p>MIS</p>
+        </Link>
       </SideBar>
       <RightContent>
         <NavBar>
@@ -52,22 +63,21 @@ const TheHomePage = () => {
           </ActionMenu>
         </NavBar>
         <MainContent>
-        <Switch>
-        <Route exact path='/' component={OPD} />
-        <Route exact path='/ipd' component={IPD} />
-        <Route exact path="/dashboard"  component={Dashboard} />
-        <Route exact path="/ipdbilling" component={IPDBilling} />
-        <Route exact path="/receipt" component={Receipt} />
-        <Route exact path="/mis" component={MIS} />
-        
-      </Switch>
-
+          <Switch>
+            <Route exact path="/" component={OPD} />
+            <Route exact path="/ipd" component={IPD} />
+            <Route exact path="/dashboard" component={Dashboard} />
+            <Route exact path="/ipdbilling" component={IPDBilling} />
+            <Route exact path="/receipt" component={Receipt} />
+            <Route exact path="/mis" component={MIS} />
+          </Switch>
         </MainContent>
       </RightContent>
     </HomePage>
   );
 };
 
+//comment
 export default TheHomePage;
 
 const HomePage = styled.div`
