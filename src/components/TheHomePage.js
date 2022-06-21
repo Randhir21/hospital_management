@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Route, Switch } from "react-router";
 import OPD from "./OPD";
-import IPD from "./IPD";
+import Ipd from "./Ipd";
 import Dashboard from "./Dashboard";
 import Receipt from "./Receipt";
 import MIS from "./MIS";
@@ -65,7 +65,7 @@ const TheHomePage = () => {
         <MainContent>
           <Switch>
             <Route exact path="/" component={OPD} />
-            <Route exact path="/ipd" component={IPD} />
+            <Route exact path="/ipd" component={Ipd} />
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/ipdbilling" component={IPDBilling} />
             <Route exact path="/receipt" component={Receipt} />
