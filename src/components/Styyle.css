@@ -6,8 +6,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
   grid-gap: 20px;
+  
 
-  /* background-color: #e6e6ff; */
+
+
+
+  /* background-color: #e6e6ff; com */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .ipdbody input {
