@@ -1,7 +1,126 @@
-.ipdbody{
-    margin-left: 15%;
-    margin-right: 15%;
-    display: grid;
-    grid-template-columns: (100px, 1fr);
-    grid-gap: 20px;
+.ipdbody {
+  /* margin-left: 15%;
+  margin-right: 15%; */
+  margin: 20px 15%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+  grid-gap: 20px;
+
+  /* background-color: #e6e6ff; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.ipdbody input {
+  border-radius: 6px;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  padding: 8px;
+  width: 100%;
+}
+.ipdbody textarea {
+  border-radius: 6px;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  padding: 8px;
+  height: 100px;
+  width: 100%;
+}
+
+.ipdbody label {
+  display: block;
+}
+.ipdbody button {
+  height: 50px;
+  width: 100px;
+  align-items: center;
+}
+.div5 {
+  display: block;
+}
+.ipdbillingbody {
+  width: 80%;
+  
+  margin: 10px 10%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 200px));
+  grid-gap: 20px;
+  
+
+  /* background-color: #e6e6ff; */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+}
+.ipdbillingbody input {
+  border-radius: 6px;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  padding: 8px;
+  width: 100%;
+}
+.ipdbillingbody textarea {
+  border-radius: 6px;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  padding: 8px;
+  height: 100px;
+  width: 100%;
+}
+
+.ipdbillingbody label {
+  display: block;
+}
+.ipdbillingbody button {
+  height: 50px;
+  width: 100px;
+  align-items: center;
+}
+.customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  
+  margin: 20px 10%;
+}
+
+.customers td, .customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.customers tr:nth-child(even){background-color: #f2f2f2;}
+
+.customers tr:hover {background-color: #ddd;}
+
+.customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+.tablebill{
+  width: 80%;
+  margin: 10px 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(50px,150px));
+  grid-gap: 20px;
+
+  
+}
+.tablebill input {
+  border-radius: 6px;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  padding: 8px;
+  width: 100%;
+}
+.tablebill button {
+  
+  width: 100%;
+  align-items: center;
+}
+.sumtotalbill{
+  width: 40%;
+  margin: 10px 10%;
+  text-align: right;
 }
